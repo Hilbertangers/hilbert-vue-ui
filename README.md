@@ -56,3 +56,4 @@ Vue.use(Flow);
 ###### 组件
 
 - `Flow` 与或逻辑图绘制器
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/flow.vue)

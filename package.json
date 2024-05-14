@@ -12,6 +12,7 @@
     "build:component": "webpack --config build/webpack.component.js",
     "build:prod": "webpack --config build/webpack.prod.js"
   },
+  "homepage": "https://github.com/Hilbertangers/hilbert-vue-ui",
   "license": "ISC",
   "dependencies": {
     "element-resize-detector": "^1.2.0"

@@ -1,0 +1,56 @@
+/* ************************* */
+/* CSS 动画库
+/* ************************* */
+
+/* 旋转 */
+.ani-spin{
+    animation: spin 2s linear infinite;
+}
+
+/* 旋转－慢 */
+.ani-spin-slow{
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg);}
+    50%  { transform: rotate(180deg);}
+    to   { transform: rotate(360deg);}
+}
+
+/* 呼吸 */
+.ani-breathe{
+  animation: breathe 2.5s linear infinite;
+}
+
+@keyframes breathe{
+  from { opacity: 1}
+  50%  { opacity: 0.3}
+  to   { opacity: 0.99}
+}
+
+/* 摇晃 */
+.ani-shake{
+  animation: shake 1.3s cubic-bezier(.36,.07,.19,.97) infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake{
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}

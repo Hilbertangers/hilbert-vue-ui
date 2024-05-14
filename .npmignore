@@ -1,0 +1,10 @@
+__tests__/*
+build/*
+examples/*
+node_modules/*
+src/*
+.babelrc
+components.json
+jest.config.js
+
+/coverage

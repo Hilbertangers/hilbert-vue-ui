@@ -3,6 +3,7 @@
 
 <template>
   <div>
+    <input type="text" :value="value" >
     <Flow :value="value" :nodeMap="nodeMap" />
   </div>
 </template>
@@ -13,12 +14,15 @@
     components: { },
     data() {
       return {
-        value: '1&2&(3|4)',
+        value: '1&2&(3|(4|5)) & 6 & 7',
         nodeMap: [
-          { value: '1', label: '执行条件1', status: true },
-          { value: '2', label: '执行条件2', status: false },
-          { value: '3', label: '执行条件3' },
-          { value: '4', label: '执行条件4' },
+          { value: '1', label: '进入收银台', status: true },
+          { value: '2', label: '输入金额', status: false },
+          { value: '3', label: '不验券' },
+          { value: '4', label: '验美团券' },
+          { value: '5', label: '验抖音券' },
+          { value: '6', label: '支付' },
+          { value: '7', label: '订单完成', status: true },
         ]
       };
     },

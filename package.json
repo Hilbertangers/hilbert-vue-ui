@@ -1,6 +1,6 @@
 {
   "name": "hilbert-vue-ui",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "hilbert-vue-ui",
   "main": "lib/hilbert-vue.min.js",
   "scripts": {

@@ -6,5 +6,7 @@ src/*
 .babelrc
 components.json
 jest.config.js
+Dockerfile
+nginx.conf
 
 /coverage

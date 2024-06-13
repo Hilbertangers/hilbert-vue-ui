@@ -42,7 +42,7 @@ import 'hilbert-vue-ui/lib/styles/Flow.css'; // 加载 CSS
 }
 ```
 
-然后只需引入模块即可，无需单独引入样式。等同于下面手动引入的方式。
+然后只需引入模块即可，无需单独引入样式。等同于上面手动引入的方式。
 
 ```javascript
 // babel-plugin-component 会帮助你加载 JS 和 CSS
@@ -57,3 +57,10 @@ Vue.use(Flow);
 
 - `Flow` 与或逻辑图绘制器
   - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/flow.vue)
+
+- `SkuChoose` 商品多规格选择
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/sku-choose.vue)
+
+
+- `BraceEditor` 基于brace的代码编辑器封装
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/brace-editor.vue)

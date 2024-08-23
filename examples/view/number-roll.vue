@@ -34,9 +34,9 @@
     ></number-roll>
     <!-- <span class="font-AP" :style="{fontSize: `${height}px`}">9</span>
     <span class="font-AP" :style="{fontSize: `${height / 2}px`}">9</span> -->
-    <button @click="() => num++">add one</button>
-    <button @click="() => num--">min one</button>
-    <button @click="() => num = Math.ceil(Math.random() * 1000)">random</button>
+    <Button type="primary" @click="() => num++">add one</Button>
+    <Button type="error" @click="() => num--">min one</Button>
+    <Button type="success" @click="() => num = Math.ceil(Math.random() * 1000)">random</Button>
   </div>
 </template>
 

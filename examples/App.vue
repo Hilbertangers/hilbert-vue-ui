@@ -1,13 +1,11 @@
 <template>
   <div id="app">
-    <ul class="demo-menu">
-      <li>
-        <router-link to="/flow">/flow</router-link>
-        <router-link to="/brace-editor">/brace-editor</router-link>
-        <router-link to="/sku-choose">/sku-choose</router-link>
-        <router-link to="/number-roll">/number-roll</router-link>
-      </li>
-    </ul>
+    <Tabs v-model="tab" @on-click="change">
+      <TabPane
+        v-for="item in components"
+        :label="item"
+        :name="item"></TabPane>
+    </Tabs>
     <router-view/>
   </div>
 </template>
@@ -15,6 +13,22 @@
 <script>
   export default {
     name: 'App',
+    data() {
+      return {
+        tab: '',
+        components: [
+          'flow',
+          'brace-editor',
+          'sku-choose',
+          'number-roll'
+        ]
+      }
+    },
+    methods: {
+      change(name) {
+        this.$router.push(`/${name}`)
+      }
+    }
   }
 </script>
 

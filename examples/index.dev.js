@@ -7,6 +7,9 @@ import hilbertVue from '@';
 import * as utils from '@/utils';
 import '@/styles/index.less';
 import './index.less';
+import 'view-design/dist/styles/iview.css';
+import ViewUI from 'view-design';
+Vue.use(ViewUI);
 
 Vue.use(hilbertVue);
 Vue.config.productionTip = false

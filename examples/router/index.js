@@ -20,5 +20,10 @@ export default new Router({
       name: 'SkuChoose',
       component: () => import('../view/sku-choose'),
     },
+    {
+      path: '/number-roll',
+      name: 'NumberRoll',
+      component: () => import('../view/number-roll'),
+    },
   ]
 })

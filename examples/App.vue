@@ -5,6 +5,7 @@
         <router-link to="/flow">/flow</router-link>
         <router-link to="/brace-editor">/brace-editor</router-link>
         <router-link to="/sku-choose">/sku-choose</router-link>
+        <router-link to="/number-roll">/number-roll</router-link>
       </li>
     </ul>
     <router-view/>

@@ -29,5 +29,10 @@ export default new Router({
       name: 'NumberRoll',
       component: () => import('../view/number-roll'),
     },
+    {
+      path: '/bulb-switch',
+      name: 'BulbSwitch',
+      component: () => import('../view/bulb-switch'),
+    },
   ]
 })

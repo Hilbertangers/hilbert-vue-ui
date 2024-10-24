@@ -20,7 +20,8 @@
           'flow',
           'brace-editor',
           'sku-choose',
-          'number-roll'
+          'number-roll',
+          'bulb-switch',
         ]
       }
     },

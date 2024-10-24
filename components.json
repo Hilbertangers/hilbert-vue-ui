@@ -2,5 +2,6 @@
   "Flow": "./src/components/Flow/index.js",
   "BraceEditor": "./src/components/BraceEditor/index.js",
   "SkuChoose": "./src/components/SkuChoose/index.js",
-  "NumberRoll": "./src/components/NumberRoll/index.js"
+  "NumberRoll": "./src/components/NumberRoll/index.js",
+  "BulbSwitch": "./src/components/BulbSwitch/index.js"
 }

@@ -64,3 +64,9 @@ Vue.use(Flow);
 
 - `BraceEditor` 基于brace的代码编辑器封装
   - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/brace-editor.vue)
+
+- `number-roll` 数字滚动特效
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/number-roll.vue)
+
+- `bulb-switch` 灯泡开关
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/bulb-switch.vue)

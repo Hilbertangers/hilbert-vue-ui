@@ -3,5 +3,6 @@
   "BraceEditor": "./src/components/BraceEditor/index.js",
   "SkuChoose": "./src/components/SkuChoose/index.js",
   "NumberRoll": "./src/components/NumberRoll/index.js",
-  "BulbSwitch": "./src/components/BulbSwitch/index.js"
+  "BulbSwitch": "./src/components/BulbSwitch/index.js",
+  "MultiDonutChart": "./src/components/MultiDonutChart/index.js"
 }

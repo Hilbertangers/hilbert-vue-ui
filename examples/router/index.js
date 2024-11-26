@@ -34,5 +34,10 @@ export default new Router({
       name: 'BulbSwitch',
       component: () => import('../view/bulb-switch'),
     },
+    {
+      path: '/multi-donut-chart',
+      name: 'multi-donut-chart',
+      component: () => import('../view/multi-donut-chart'),
+    },
   ]
 })

@@ -22,6 +22,7 @@
           'sku-choose',
           'number-roll',
           'bulb-switch',
+          'multi-donut-chart',
         ]
       }
     },

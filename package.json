@@ -16,7 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "brace": "^0.11.1",
-    "element-resize-detector": "^1.2.0"
+    "element-resize-detector": "^1.2.0",
+    "echarts": "^5.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

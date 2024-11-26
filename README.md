@@ -70,3 +70,6 @@ Vue.use(Flow);
 
 - `bulb-switch` 灯泡开关
   - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/bulb-switch.vue)
+
+- `multi-donut-chart` 多级环图
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/multi-donut-chart.vue)

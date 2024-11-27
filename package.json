@@ -1,10 +1,11 @@
 {
   "name": "hilbert-vue-ui",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "hilbert-vue-ui",
   "main": "lib/hilbert-vue.min.js",
   "scripts": {
     "dev": "webpack-dev-server --config examples/build/webpack.dev.js --dev",
+    "deploy": "gh-pages -b main -d examples/dist",
     "build": "npm run build:style && npm run build:prod && npm run build:component",
     "dev:demo": "npm run build && webpack-dev-server --config examples/build/webpack.dev.js --demo",
     "build:demo": "webpack --config examples/build/webpack.prod.js",
@@ -16,8 +17,9 @@
   "license": "ISC",
   "dependencies": {
     "brace": "^0.11.1",
+    "echarts": "^5.4.3",
     "element-resize-detector": "^1.2.0",
-    "echarts": "^5.4.3"
+    "gh-pages": "^6.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

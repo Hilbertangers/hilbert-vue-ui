@@ -73,3 +73,6 @@ Vue.use(Flow);
 
 - `multi-donut-chart` 多级环图
   - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/multi-donut-chart.vue)
+
+- `signature-pad` 笔锋签字板
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/signature-pad.vue)

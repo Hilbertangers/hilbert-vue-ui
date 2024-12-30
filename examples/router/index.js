@@ -39,5 +39,10 @@ export default new Router({
       name: 'multi-donut-chart',
       component: () => import('../view/multi-donut-chart'),
     },
+    {
+      path: '/signature-pad',
+      name: 'signature-pad',
+      component: () => import('../view/signature-pad'),
+    },
   ]
 })

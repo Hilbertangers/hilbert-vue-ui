@@ -23,6 +23,7 @@
           'number-roll',
           'bulb-switch',
           'multi-donut-chart',
+          'signature-pad',
         ]
       }
     },

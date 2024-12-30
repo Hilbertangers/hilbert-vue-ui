@@ -5,7 +5,7 @@
   "main": "lib/hilbert-vue.min.js",
   "scripts": {
     "dev": "webpack-dev-server --config examples/build/webpack.dev.js --dev",
-    "deploy": "gh-pages -b deploy -d examples/dist",
+    "deploy": "gh-pages deploy -d examples/dist",
     "build": "npm run build:style && npm run build:prod && npm run build:component",
     "dev:demo": "npm run build && webpack-dev-server --config examples/build/webpack.dev.js --demo",
     "build:demo": "webpack --config examples/build/webpack.prod.js",

@@ -1,0 +1,12 @@
+__tests__/*
+build/*
+examples/*
+node_modules/*
+src/*
+.babelrc
+components.json
+jest.config.js
+Dockerfile
+nginx.conf
+
+/coverage

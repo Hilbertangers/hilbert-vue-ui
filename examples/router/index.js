@@ -11,27 +11,27 @@ export default new Router({
     },
     {
       path: '/flow',
-      name: 'Flow',
+      name: 'flow',
       component: () => import('../view/flow'),
     },
     {
       path: '/brace-editor',
-      name: 'BraceEditor',
+      name: 'brace-editor',
       component: () => import('../view/brace-editor'),
     },
     {
       path: '/sku-choose',
-      name: 'SkuChoose',
+      name: 'sku-choose',
       component: () => import('../view/sku-choose'),
     },
     {
       path: '/number-roll',
-      name: 'NumberRoll',
+      name: 'number-roll',
       component: () => import('../view/number-roll'),
     },
     {
       path: '/bulb-switch',
-      name: 'BulbSwitch',
+      name: 'bulb-switch',
       component: () => import('../view/bulb-switch'),
     },
     {

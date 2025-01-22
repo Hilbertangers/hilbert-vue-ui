@@ -90,6 +90,16 @@
         ]
       }
     },
+    watch: {
+      $route: {
+        immediate: true, // 一旦监听到路由的变化立即执行
+        handler(to, from) {
+          if (to.name) {
+            this.tab = to.name
+          }
+        },
+      },
+    },
     mounted() {
       Vue.prototype.$spotlight = this.$refs.spotlight
     },

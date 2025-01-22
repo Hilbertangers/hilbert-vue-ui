@@ -44,5 +44,10 @@ export default new Router({
       name: 'signature-pad',
       component: () => import('../view/signature-pad'),
     },
+    {
+      path: '/spotlight',
+      name: 'spotlight',
+      component: () => import('../view/spotlight'),
+    },
   ]
 })

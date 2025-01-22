@@ -5,6 +5,7 @@ import NumberRoll from './components/NumberRoll';
 import BulbSwitch from './components/BulbSwitch';
 import MultiDonutChart from './components/MultiDonutChart';
 import SignaturePad from './components/SignaturePad';
+import Spotlight from './components/Spotlight';
 
 const components = {
   Flow,
@@ -14,6 +15,7 @@ const components = {
   BulbSwitch,
   MultiDonutChart,
   SignaturePad,
+  Spotlight
 }
 
 const install = function(Vue, opts = {}) {

@@ -1,5 +1,8 @@
 # vue2.0组件库
 
+### Demo
+[Demo](https://hilbertangers.github.io/hilbert-vue-ui/#/flow)
+
 ### 安装
 
 `$ npm i -S hilbert-vue-ui`

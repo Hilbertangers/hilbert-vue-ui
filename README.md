@@ -82,3 +82,6 @@ Vue.use(Flow);
 
 - `spotlight` 全局搜索
   - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/App.vue)
+
+- `pin-input` 验证码输入
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/pin-input.vue)

@@ -49,5 +49,10 @@ export default new Router({
       name: 'spotlight',
       component: () => import('../view/spotlight'),
     },
+    {
+      path: '/pin-input',
+      name: 'pin-input',
+      component: () => import('../view/pin-input'),
+    },
   ]
 })

@@ -6,6 +6,7 @@ import BulbSwitch from './components/BulbSwitch';
 import MultiDonutChart from './components/MultiDonutChart';
 import SignaturePad from './components/SignaturePad';
 import Spotlight from './components/Spotlight';
+import PinInput from './components/PinInput';
 
 const components = {
   Flow,
@@ -15,7 +16,8 @@ const components = {
   BulbSwitch,
   MultiDonutChart,
   SignaturePad,
-  Spotlight
+  Spotlight,
+  PinInput
 }
 
 const install = function(Vue, opts = {}) {

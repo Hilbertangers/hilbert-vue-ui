@@ -87,6 +87,14 @@
               this.$router.push('/spotlight')
             }
           },
+          {
+            id: 'pin-input',
+            title: 'PIN输入',
+            description: 'pin-input, 一个验证码输入组件，支持数字、字母、密码、移动端输入，支持自动聚焦，粘贴，回退等功能',
+            onTrigger: () => {
+              this.$router.push('/pin-input')
+            }
+          },
         ]
       }
     },

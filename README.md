@@ -85,3 +85,6 @@ Vue.use(Flow);
 
 - `pin-input` 验证码输入
   - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/pin-input.vue)
+
+- `angle-slider` 角度选择器
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/angle-slider.vue)

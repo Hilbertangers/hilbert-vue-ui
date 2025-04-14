@@ -1,0 +1,233 @@
+.angle-slider {
+  position: relative;
+  user-select: none;
+}
+
+.angle-slider__circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+
+.angle-slider__progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.angle-slider__ticks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.angle-slider__tick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  transform-origin: left center;
+}
+
+.angle-slider__tick::after {
+  content: '';
+  position: absolute;
+  right: 12%;
+  width: 8px;
+  height: 2px;
+  background-color: #dee2e6;
+  transition: background-color 0.2s;
+}
+
+.angle-slider__tick--active::after {
+  background-color: var(--progress-color);
+}
+
+.angle-slider__thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  transform-origin: left center;
+  z-index: 1;
+}
+
+.angle-slider__thumb-handle {
+  position: absolute;
+  right: 10%;
+  top: -6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #228be6;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.angle-slider__thumb-handle:hover {
+  background: #1c7ed6;
+}
+
+.value-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.angle-slider__labels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.angle-slider__label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: left center;
+  font-size: 12px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.angle-slider__tick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  transform-origin: left center;
+}
+
+.angle-slider__tick::after {
+  content: '';
+  position: absolute;
+  right: 12%;
+  width: 8px;
+  height: 2px;
+  background-color: #dee2e6;
+  transition: background-color 0.2s;
+}
+
+/* 主要刻度线样式 */
+.angle-slider__tick:nth-child(18n)::after {
+  width: 12px;
+  height: 2.5px;
+  right: 10%;
+  background-color: #adb5bd;
+}
+
+.angle-slider__tick--active::after {
+  background-color: #228be6;
+}
+
+/* 进度终点标记的样式 */
+.angle-slider__progress circle:last-child {
+  transition: cx 0.2s, cy 0.2s;
+}
+
+
+.angle-slider__end-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  transform-origin: left center;
+  z-index: 2;
+}
+
+.angle-slider__end-mark-line {
+  position: absolute;
+  right: 50%;
+  width: 16px;
+  height: 4px;
+  background-color: var(--end-mark-color);
+  transform: translateY(-50%);
+}
+
+/* 确保进度圆环在终点标记下方 */
+.angle-slider__progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.angle-slider__thumb-line {
+  position: absolute;
+  left: 50%;
+  right: 10%;
+  height: 2px;
+  background: var(--progress-color);
+}
+
+.angle-slider__step-ticks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.angle-slider__step-tick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 1px;
+  transform-origin: left center;
+}
+
+.angle-slider__step-ticks>div:nth-of-type(1) {
+  z-index: 9;
+}
+
+.angle-slider__step-tick::after {
+  content: '';
+  position: absolute;
+  right: 0%;  /* 位置在圆环内侧 */
+  width: 8px;  /* 小刻度线的长度 */
+  height: 2px;  /* 小刻度线的粗细 */
+  background-color: #dee2e6;
+  transition: background-color 0.2s;
+  transform: translateY(-50%);
+}
+
+.angle-slider__step-tick--active::after {
+  background-color: var(--progress-color);
+}
+
+/* 调整主刻度线的位置，避免与步进刻度重叠 */
+.angle-slider__tick::after {
+  right: 15%;  /* 调整到圆环外侧 */
+  width: 10px;
+}
+
+/* 确保终点标记在最上层 */
+.angle-slider__end-mark {
+  z-index: 3;
+}
+
+/* 调整进度圆环的层级 */
+.angle-slider__progress {
+  z-index: 2;
+}

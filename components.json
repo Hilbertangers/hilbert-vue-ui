@@ -7,5 +7,6 @@
   "MultiDonutChart": "./src/components/MultiDonutChart/index.js",
   "SignaturePad": "./src/components/SignaturePad/index.js",
   "Spotlight": "./src/components/Spotlight/index.js",
-  "PinInput": "./src/components/PinInput/index.js"
+  "PinInput": "./src/components/PinInput/index.js",
+  "AngleSlider": "./src/components/AngleSlider/index.js"
 }

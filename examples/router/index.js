@@ -54,5 +54,10 @@ export default new Router({
       name: 'pin-input',
       component: () => import('../view/pin-input'),
     },
+    {
+      path: '/angle-slider',
+      name: 'angle-slider',
+      component: () => import('../view/angle-slider'),
+    },
   ]
 })

@@ -95,6 +95,14 @@
               this.$router.push('/pin-input')
             }
           },
+          {
+            id: 'angle-slider',
+            title: '角度选择器',
+            description: 'angle-slider, 一个角度选择器组件，支持点击拖拽设置角度值，支持指标器、环形进度条、刻度线等功能，并能由用户自定义样式',
+            onTrigger: () => {
+              this.$router.push('/angle-slider')
+            }
+          },
         ]
       }
     },

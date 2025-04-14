@@ -7,6 +7,7 @@ import MultiDonutChart from './components/MultiDonutChart';
 import SignaturePad from './components/SignaturePad';
 import Spotlight from './components/Spotlight';
 import PinInput from './components/PinInput';
+import AngleSlider from './components/AngleSlider';
 
 const components = {
   Flow,
@@ -17,7 +18,8 @@ const components = {
   MultiDonutChart,
   SignaturePad,
   Spotlight,
-  PinInput
+  PinInput,
+  AngleSlider
 }
 
 const install = function(Vue, opts = {}) {

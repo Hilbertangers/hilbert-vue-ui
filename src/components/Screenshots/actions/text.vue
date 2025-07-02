@@ -312,7 +312,6 @@ export default {
     },
 
     undoCB(priority, action, actionRef, { el, viewer, ctx, context, setContext }) {
-      console.log("🚀 ~ undoCB ~ actionRef:", actionRef)
       if (actionRef.$textarea && !actionRef.isFocus && actionRef.text === priority) {
         if (priority.history.length) {
           // 直接更新现有组件而不是重新创建

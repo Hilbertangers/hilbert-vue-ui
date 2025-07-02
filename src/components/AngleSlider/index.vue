@@ -67,22 +67,25 @@ export default {
       type: Number,
       default: 0
     },
+    // 尺寸
     size: {
       type: Number,
       default: 100
     },
-    // 添加新的 props
+    //步进器步数
     step: {
       type: Number,
       default: 5 // 默认5度一步
     },
+    //是否使用步进器
     useStep: {
       type: Boolean,
       default: false // 默认不启用步进
     },
+    //是否展示刻度
     showUseStep: {
       type: Boolean,
-      default: true // 默认不启用步进
+      default: true
     },
     backgroundColor: {
       type: String,

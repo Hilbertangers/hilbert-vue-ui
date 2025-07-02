@@ -1,7 +1,7 @@
 <template>
   <div class="screenshots-sizecolor">
-      <Size :isFont="isFont" :value="size" @onChange="(v) => $emit('onSizeChange', v)" />
-      <Color :value="color" @onChange="(v) => $emit('onColorChange', v)" />
+      <Size :isFont="isFont" :value="size" @onChange="handleSizeChange" />
+      <Color :value="color" @onChange="handleColorChange" />
   </div>
 </template>
 
@@ -16,6 +16,14 @@
       size: Number,
       color: String,
       isFont: Boolean,
+    },
+    methods: {
+      handleSizeChange(v) {
+        this.$emit('onSizeChange', v)
+      },
+      handleColorChange(v) {
+        this.$emit('onColorChange', v)
+      }
     }
   };
 </script>

@@ -94,15 +94,23 @@
             onTrigger: () => {
               this.$router.push('/pin-input')
             }
-          },
-          {
-            id: 'angle-slider',
-            title: '角度选择器',
-            description: 'angle-slider, 一个角度选择器组件，支持点击拖拽设置角度值，支持指标器、环形进度条、刻度线等功能，并能由用户自定义样式',
-            onTrigger: () => {
-              this.$router.push('/angle-slider')
+            },
+            {
+              id: 'angle-slider',
+              title: '角度选择器',
+              description: 'angle-slider, 一个角度选择器组件，支持点击拖拽设置角度值，支持指标器、环形进度条、刻度线等功能，并能由用户自定义样式',
+              onTrigger: () => {
+                this.$router.push('/angle-slider')
+              }
+            },
+            {
+              id: 'screenshot',
+              title: '截图工具',
+              description: 'screenshot, 一个界面截图组件，支持web、electron端使用，操作模式参照企业微信截图，支持各类路径的拖拽和编辑，支持放大镜、取色器、马赛克、文字绘制编辑等小组件，且所有操作均可回退，保存后会返回base64图片数据',
+              onTrigger: () => {
+                this.$router.push('/screenshot')
+              }
             }
-          },
         ]
       }
     },

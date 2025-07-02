@@ -88,3 +88,6 @@ Vue.use(Flow);
 
 - `angle-slider` 角度选择器
   - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/angle-slider.vue)
+
+- `screenshots` 屏幕截图工具
+  - [案例参考](https://github.com/Hilbertangers/hilbert-vue-ui/blob/main/examples/view/screenshots.vue)

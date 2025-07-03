@@ -60,9 +60,9 @@ export default new Router({
       component: () => import('../view/angle-slider'),
     },
     {
-      path: '/screenshot',
-      name: 'screenshot',
-      component: () => import('../view/screenshot'),
+      path: '/screenshots',
+      name: 'screenshots',
+      component: () => import('../view/screenshots'),
     },
   ]
 })

@@ -9,5 +9,6 @@
   "Spotlight": "./src/components/Spotlight/index.js",
   "PinInput": "./src/components/PinInput/index.js",
   "AngleSlider": "./src/components/AngleSlider/index.js",
-  "Screenshots": "./src/components/Screenshots/index.js"
+  "Screenshots": "./src/components/Screenshots/index.js",
+  "Marquee": "./src/components/Marquee/index.js"
 }

@@ -1,0 +1,82 @@
+.h-marquee-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+}
+
+.h-marquee-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+
+  &::before {
+    background: linear-gradient(to right, var(--gradient-color, white), rgba(255, 255, 255, 0));
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: var(--gradient-width, 200px);
+    pointer-events: none;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    background: linear-gradient(to left, var(--gradient-color, white), rgba(255, 255, 255, 0));
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: var(--gradient-width, 200px);
+    pointer-events: none;
+    right: 0;
+    top: 0;
+  }
+}
+
+.h-marquee {
+  flex: 0 0 auto;
+  min-width: var(--min-width, 100%);
+  max-width: none;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  animation: scroll var(--duration, 10s) linear var(--delay, 0s) var(--iteration-count, infinite);
+  animation-play-state: var(--play, running);
+  animation-delay: var(--delay, 0s);
+  animation-direction: var(--direction, normal);
+  will-change: transform;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.h-marquee-initial-child-container {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+}
+
+.h-marquee-child {
+  flex-shrink: 0;
+  transform: var(--transform, none);
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+}

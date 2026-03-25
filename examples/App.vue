@@ -110,6 +110,14 @@
               onTrigger: () => {
                 this.$router.push('/screenshots')
               }
+            },
+            {
+              id: 'marquee',
+              title: '跑马灯',
+              description: 'marquee, 一个基于CSS动画实现的跑马灯组件，支持平滑滚动、暂停控制、渐变遮罩等功能，支持水平和垂直四个方向滚动',
+              onTrigger: () => {
+                this.$router.push('/marquee')
+              }
             }
         ]
       }

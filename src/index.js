@@ -9,6 +9,7 @@ import Spotlight from './components/Spotlight';
 import PinInput from './components/PinInput';
 import AngleSlider from './components/AngleSlider';
 import Screenshots from './components/Screenshots';
+import Marquee from './components/Marquee';
 
 const components = {
   Flow,
@@ -21,7 +22,8 @@ const components = {
   Spotlight,
   PinInput,
   AngleSlider,
-  Screenshots
+  Screenshots,
+  Marquee
 }
 
 const install = function(Vue, opts = {}) {

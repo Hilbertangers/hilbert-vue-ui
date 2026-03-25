@@ -64,5 +64,10 @@ export default new Router({
       name: 'screenshots',
       component: () => import('../view/screenshots'),
     },
+    {
+      path: '/marquee',
+      name: 'marquee',
+      component: () => import('../view/marquee'),
+    },
   ]
 })

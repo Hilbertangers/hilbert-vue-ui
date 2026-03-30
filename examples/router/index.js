@@ -69,5 +69,10 @@ export default new Router({
       name: 'marquee',
       component: () => import('../view/marquee'),
     },
+    {
+      path: '/skeleton',
+      name: 'skeleton',
+      component: () => import('../view/skeleton'),
+    },
   ]
 })

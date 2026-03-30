@@ -10,6 +10,7 @@ import PinInput from './components/PinInput';
 import AngleSlider from './components/AngleSlider';
 import Screenshots from './components/Screenshots';
 import Marquee from './components/Marquee';
+import Skeleton from './components/Skeleton';
 
 const components = {
   Flow,
@@ -23,7 +24,8 @@ const components = {
   PinInput,
   AngleSlider,
   Screenshots,
-  Marquee
+  Marquee,
+  Skeleton
 }
 
 const install = function(Vue, opts = {}) {
